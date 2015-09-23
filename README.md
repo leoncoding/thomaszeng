@@ -7,7 +7,7 @@
 ![image](https://github.com/paulzeng/thomaszeng/raw/master/screenshots/person.jpg)
 ![image](https://github.com/paulzeng/thomaszeng/raw/master/screenshots/welcome.jpg)
 
-2th commit 增加推荐用户页面
+2th commit 增加推荐用户页面</br>
 ![image](https://github.com/paulzeng/thomaszeng/raw/master/screenshots/recommend.jpg)
 
 
