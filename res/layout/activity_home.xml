@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/grey_50"
+    android:orientation="vertical" >
+
+    <include
+        android:id="@+id/home_top"
+        layout="@layout/layout_title" />
+
+    <ListView
+        android:id="@+id/lstViewContent"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/home_top"
+        android:background="@color/white"
+        android:cacheColorHint="#00000000"
+        android:divider="@color/common_black_light"
+        android:dividerHeight="0.5dp"
+        android:listSelector="#00000000" />
+
+    <Button
+        android:id="@+id/btn_add_person"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/selector_bt_add" >
+    </Button>
+
+</RelativeLayout>

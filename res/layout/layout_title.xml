@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/title_root_rl"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/title_height"
+    android:background="@color/common" >
+
+    <LinearLayout
+        android:id="@+id/title_back_ll"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:background="@drawable/selector_title_nav"
+        android:visibility="gone" >
+
+        <TextView
+            android:id="@+id/title_back_tv"
+            style="@style/title_left_right_tv"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="10dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/title_next_ll"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_alignParentRight="true" 
+        android:onClick="onClick"
+        android:visibility="gone" >
+
+        <TextView
+            android:id="@+id/title_next_tv"
+            style="@style/title_left_right_tv"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/title_title_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:textColor="@android:color/white"
+        android:textSize="@dimen/text_size_nor_" />
+
+    <ImageView
+        android:id="@+id/title_back_iv"
+        style="@style/title_left_iv"
+        android:src="@drawable/abc_ic_ab_back_mtrl_am_alpha" />
+    
+    <ImageView
+        android:id="@+id/title_set_iv"
+        style="@style/title_right_iv"
+        android:src="@drawable/site" />
+
+    <ImageView
+        android:id="@+id/title_change"
+        style="@style/title_left_iv"
+        android:src="@drawable/title_change_phone" />
+
+    <ImageView
+        android:id="@+id/title_group_iv"
+        style="@style/title_right_iv"
+        android:src="@drawable/title_group" />
+
+    <ImageView
+        android:id="@+id/title_camera_iv"
+        style="@style/title_right_iv"
+        android:src="@drawable/camera_press" />
+
+</RelativeLayout>

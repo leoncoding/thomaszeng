@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">全景秀</string>
+    <string name="txt_loading">加载中，请稍后...</string>
+    <string name="title_home">我的设备</string>
+    <string name="title_user">用户中心</string>
+    <string name="login_title">登录</string>
+    <string name="register_title">注册</string>
+    <string name="register_phone">请输入手机号码</string>
+    <string name="register_pwd">请输入密码</string>
+    <string name="register_zhengce"><u>使用条款和隐私政策</u></string>
+    <string name="dialog_loading">请稍等&#8230;</string>
+    <string name="dialog_loading_login">登录中，请稍等&#8230;</string>
+    <string name="person_title">注册</string>
+
+</resources>
