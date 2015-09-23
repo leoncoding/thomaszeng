@@ -10,6 +10,6 @@
 2th commit 推荐用户页面</br>
 ![image](https://github.com/paulzeng/thomaszeng/raw/master/screenshots/recommend.jpg)
 </br>
-编辑用户信息界面
+编辑用户信息界面</br>
 ![image](https://github.com/paulzeng/thomaszeng/raw/master/screenshots/editUserinfo.jpg)
-
+</br>
