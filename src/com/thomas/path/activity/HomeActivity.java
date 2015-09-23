@@ -57,7 +57,7 @@ public class HomeActivity extends BaseActivity implements OnClickListener,
 	public void findViews() {
 		// TODO Auto-generated method stub
 		TitleManager.showTitle(this, new int[] { TitleManager.CHANGE_PHONE },
-				R.string.app_name, this);
+				R.string.app_name, 0, R.string.txt_recommend, this);
 		// 侧滑
 		mDrawerLayout = (DrawerLayout) findViewById(R.id.drawerLayout);
 		setEnableDrawerLayout(mDrawerLayout, this);
@@ -137,6 +137,9 @@ public class HomeActivity extends BaseActivity implements OnClickListener,
 
 		case R.id.warn_sure_bt:
 			BaseApplication.mInstance.exit();
+			break;
+		case R.id.title_next_tv:
+			startActivity(new Intent(this, RecommendPersonActivity.class));
 			break;
 		default:
 			break;

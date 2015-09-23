@@ -77,11 +77,11 @@ public class PersonActivity extends BaseActivity implements OnClickListener,
 		tv_username = (TextView) headerView.findViewById(R.id.tv_username);
 		tv_username.setText(user.getNickName());
 		tv_panos = (TextView) headerView.findViewById(R.id.tv_panos);
-		tv_panos.setText("0\nPanos");
+		tv_panos.setText("0\n全景图");
 		tv_follows = (TextView) headerView.findViewById(R.id.tv_follows);
-		tv_follows.setText("0\nFollows");
+		tv_follows.setText("0\n粉丝");
 		tv_following = (TextView) headerView.findViewById(R.id.tv_following);
-		tv_following.setText("0\nFollowing");
+		tv_following.setText("0\n关注");
 		btnFollow = (Button) headerView.findViewById(R.id.btn_follow);
 		StringUtils.setTextTypeface(FontType.XIYUAN, this, tv_username);
 		StringUtils.setTextTypeface(FontType.XIYUAN, this, tv_panos);
@@ -132,6 +132,7 @@ public class PersonActivity extends BaseActivity implements OnClickListener,
 				loderDialog.dismiss();
 				mData.addAll(data);
 				mAdapter.notifyDataSetChanged();
+				tv_panos.setText(data.size() + "\n全景图");
 				LogUtil.e("PersonActivity",
 						"###查询用户的全景图集合###" + data.toString());
 			}

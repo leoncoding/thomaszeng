@@ -380,9 +380,11 @@ public abstract class BaseActivity extends FragmentActivity {
 		// 设置和意见反馈
 		TextView tv_feedback = (TextView) view.findViewById(R.id.tv_feedback);
 		StringUtils.setTextTypeface(FontType.XIYUAN, this, tv_feedback);
+		tv_feedback.setOnClickListener(l);
 
 		TextView tv_settings = (TextView) view.findViewById(R.id.tv_settings);
 		StringUtils.setTextTypeface(FontType.XIYUAN, this, tv_settings);
+		tv_settings.setOnClickListener(l);
 
 	}
 

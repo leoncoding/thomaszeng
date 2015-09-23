@@ -96,7 +96,7 @@
                 android:paddingLeft="10dp"
                 android:paddingRight="10dp"
                 android:paddingTop="5dp"
-                android:text="Follow"
+                android:text="+关注"
                 android:textColor="@color/grey_700"
                 android:textSize="14sp" />
 

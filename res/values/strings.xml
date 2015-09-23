@@ -13,5 +13,6 @@
     <string name="dialog_loading">请稍等&#8230;</string>
     <string name="dialog_loading_login">登录中，请稍等&#8230;</string>
     <string name="person_title">注册</string>
+    <string name="txt_recommend">推荐用户</string>
 
 </resources>

@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/grey_100"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:layout_margin="10dp"
+        android:background="@color/white" >
+
+        <ImageView
+            android:id="@+id/iv_person_img"
+            android:layout_width="80dp"
+            android:layout_height="120dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/image01" />
+
+        <TextView
+            android:id="@+id/tv_personname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerVertical="true"
+            android:layout_margin="10dp"
+            android:layout_toRightOf="@id/iv_person_img"
+            android:ellipsize="end"
+            android:singleLine="true"
+            android:text="夏天的风"
+            android:textColor="@color/grey_700"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/tv_sex"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerVertical="true"
+            android:layout_margin="10dp"
+            android:layout_toRightOf="@id/tv_personname"
+            android:ellipsize="end"
+            android:singleLine="true"
+            android:text="男"
+            android:textColor="@color/grey_700"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/tv_city"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:layout_centerVertical="true"
+            android:layout_margin="10dp"
+            android:ellipsize="end"
+            android:singleLine="true"
+            android:text="深圳"
+            android:textColor="@color/grey_700"
+            android:textSize="16sp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_centerInParent="true"
+            android:layout_toRightOf="@id/iv_person_img"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:padding="5dp" >
+
+            <TextView
+                android:id="@+id/tv_panos"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="Panos"
+                android:textColor="@color/grey_700"
+                android:textSize="16sp" />
+
+            <View
+                android:layout_width="0.5dp"
+                android:layout_height="match_parent"
+                android:background="@color/grey_300" />
+
+            <TextView
+                android:id="@+id/tv_follows"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="Follows"
+                android:textColor="@color/grey_700"
+                android:textSize="16sp" />
+
+            <View
+                android:layout_width="0.5dp"
+                android:layout_height="match_parent"
+                android:background="@color/grey_300" />
+
+            <TextView
+                android:id="@+id/tv_following"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="Following"
+                android:textColor="@color/grey_700"
+                android:textSize="16sp" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tv_sign"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerVertical="true"
+            android:layout_margin="10dp"
+            android:layout_toRightOf="@id/iv_person_img"
+            android:ellipsize="end"
+            android:singleLine="true"
+            android:text="总有未知在身边"
+            android:textColor="@color/grey_700"
+            android:textSize="16sp" />
+    </RelativeLayout>
+
+</LinearLayout>

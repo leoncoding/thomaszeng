@@ -19,11 +19,31 @@ public class User extends BmobUser {
 	private BmobFile avatar;
 	private BmobRelation favorite;
 	private String sex;
-	private String nickname; 
+	private String nickname;
+	private String sign;
+	private String city;
 
-	public boolean isLogin(){
-		return this.getObjectId()==null;
+	public String getCity() {
+		return city;
 	}
+
+	public void setCity(String city) {
+		this.city = city;
+	}
+ 
+
+	public String getSign() {
+		return sign;
+	}
+
+	public void setSign(String sign) {
+		this.sign = sign;
+	}
+
+	public boolean isLogin() {
+		return this.getObjectId() == null;
+	}
+
 	public String getNickName() {
 		return nickname;
 	}
