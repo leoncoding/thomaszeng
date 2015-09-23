@@ -20,6 +20,7 @@ import com.nostra13.universalimageloader.utils.StorageUtils;
 import com.tencent.bugly.crashreport.CrashReport;
 import com.thomas.path.bean.User;
 import com.thomas.path.manager.CustomCrashHandler;
+import com.thomas.path.manager.LogUtil;
 
 public class BaseApplication extends Application {
 	public static BaseApplication mInstance;
@@ -68,6 +69,7 @@ public class BaseApplication extends Application {
 		SharedPreferences sp = PreferenceManager
 				.getDefaultSharedPreferences(context);
 		sp.edit().putString("user_info", new Gson().toJson(user)).commit();
+		LogUtil.e("####", "用户信息" + new Gson().toJson(user).toString());
 	}
 
 	// 获取用户对象
@@ -79,6 +81,15 @@ public class BaseApplication extends Application {
 			return new Gson().fromJson(userInfo, User.class);
 		}
 		return null;
+	}
+
+	/**
+	 * 清除用户信息
+	 */
+	public void clearUserInfo(Context context) {
+		SharedPreferences sp = PreferenceManager
+				.getDefaultSharedPreferences(context);
+		sp.edit().putString("user_info", null).commit();
 	}
 
 	// 初始化 Bmob SDK

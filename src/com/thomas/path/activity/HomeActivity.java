@@ -121,9 +121,8 @@ public class HomeActivity extends BaseActivity implements OnClickListener,
 
 			break;
 		case R.id.btn_logout:
-			BmobUser.logOut(this);
-			ToastManager.show(this, "登出成功");
-			BaseApplication.mInstance.saveUserInfo(this, null);
+			BmobUser.logOut(this); 
+			BaseApplication.mInstance.clearUserInfo(this);
 			startActivity(new Intent(this, WelcomeActivity.class));
 			finish();
 			break;

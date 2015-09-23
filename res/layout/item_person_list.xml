@@ -15,8 +15,7 @@
             android:id="@+id/iv_person_img"
             android:layout_width="80dp"
             android:layout_height="120dp"
-            android:scaleType="centerCrop"
-            android:src="@drawable/image01" />
+            android:scaleType="centerCrop"/>
 
         <TextView
             android:id="@+id/tv_personname"

@@ -28,6 +28,7 @@ public class DialogManager {
 		lp.width = getScreenWidth(context) - dpToPx(context, 100);
 		window.setGravity(Gravity.CENTER_VERTICAL);
 		TextView titleTxtv = (TextView) dialog.findViewById(R.id.dialog_tv);
+		StringUtils.setTextTypeface(FontType.XIYUAN, context, titleTxtv);
 		if (loadingTextRes instanceof String) {
 			titleTxtv.setText((String) loadingTextRes);
 		}

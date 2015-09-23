@@ -43,6 +43,7 @@ public class PersonActivity extends BaseActivity implements OnClickListener,
 	private TextView tv_username, tv_panos, tv_follows, tv_following;
 	private Button btnFollow;
 	private CircleImageView head_iv;
+	
 
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
@@ -70,6 +71,7 @@ public class PersonActivity extends BaseActivity implements OnClickListener,
 				null);
 		lstViewPersonContent.addHeaderView(headerView);
 		head_iv = (CircleImageView) headerView.findViewById(R.id.iv_user_head);
+		head_iv.setOnClickListener(this);
 		ImageLoader.getInstance().displayImage(
 				"http://file.bmob.cn/" + user.getAvatar().getUrl(), head_iv,
 				ImageManager.getUserHeadOptions());
@@ -169,6 +171,11 @@ public class PersonActivity extends BaseActivity implements OnClickListener,
 		switch (v.getId()) {
 		case R.id.title_back_iv:
 			finish();
+			break;
+		case R.id.iv_user_head:
+			if (isCurrentUser(user)) {
+				startActivity(new Intent(this, EditUserInfoActivity.class));
+			}
 			break;
 
 		default:
