@@ -5,4 +5,4 @@
 ![image](https://github.com/paulzeng/thomaszeng/raw/master/screenshots/menu.jpg)
 ![image](https://github.com/paulzeng/thomaszeng/raw/master/screenshots/home.jpg)
 ![image](https://github.com/paulzeng/thomaszeng/raw/master/screenshots/person.jpg)
-![image](https://github.com/paulzeng/thomaszeng/raw/master/screenshots/welcome.jpg)
+
