@@ -24,13 +24,22 @@
             android:textColor="@color/grey_700"
             android:textSize="@dimen/text_size_nor" />
 
+        <ImageView
+            android:id="@+id/iv_user_head_next"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:src="@drawable/icon_extension" />
+
         <com.thomas.path.view.CircleImageView
             android:id="@+id/iv_user_head"
             android:layout_width="60dp"
             android:layout_height="60dp"
-            android:layout_alignParentRight="true"
             android:layout_centerVertical="true"
-            android:layout_marginRight="10dp"
+            android:layout_marginRight="5dp"
+            android:layout_toLeftOf="@id/iv_user_head_next"
             android:src="@drawable/login_btn_default" />
     </RelativeLayout>
 
@@ -54,13 +63,22 @@
             android:textColor="@color/grey_700"
             android:textSize="@dimen/text_size_nor" />
 
-        <TextView
-            android:id="@+id/tv_nickname"
+        <ImageView
+            android:id="@+id/iv_nickname_next"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_alignParentRight="true"
             android:layout_centerVertical="true"
             android:layout_marginRight="10dp"
+            android:src="@drawable/icon_extension" />
+
+        <TextView
+            android:id="@+id/tv_nickname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="5dp"
+            android:layout_toLeftOf="@id/iv_nickname_next"
             android:text="夏天的风"
             android:textColor="@color/grey_700"
             android:textSize="@dimen/text_size_nor" />
@@ -86,13 +104,22 @@
             android:textColor="@color/grey_700"
             android:textSize="@dimen/text_size_nor" />
 
-        <TextView
-            android:id="@+id/tv_sex"
+        <ImageView
+            android:id="@+id/iv_sex_next"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_alignParentRight="true"
             android:layout_centerVertical="true"
             android:layout_marginRight="10dp"
+            android:src="@drawable/icon_extension" />
+
+        <TextView
+            android:id="@+id/tv_sex"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="5dp"
+            android:layout_toLeftOf="@id/iv_sex_next"
             android:text="男"
             android:textColor="@color/grey_700"
             android:textSize="@dimen/text_size_nor" />
@@ -118,13 +145,22 @@
             android:textColor="@color/grey_700"
             android:textSize="@dimen/text_size_nor" />
 
-        <TextView
-            android:id="@+id/tv_city"
+        <ImageView
+            android:id="@+id/iv_city_next"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_alignParentRight="true"
             android:layout_centerVertical="true"
             android:layout_marginRight="10dp"
+            android:src="@drawable/icon_extension" />
+
+        <TextView
+            android:id="@+id/tv_city"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="5dp"
+            android:layout_toLeftOf="@id/iv_city_next"
             android:text="深圳"
             android:textColor="@color/grey_700"
             android:textSize="@dimen/text_size_nor" />
@@ -150,13 +186,22 @@
             android:textColor="@color/grey_700"
             android:textSize="@dimen/text_size_nor" />
 
-        <TextView
-            android:id="@+id/tv_sign"
+        <ImageView
+            android:id="@+id/iv_sign_next"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_alignParentRight="true"
             android:layout_centerVertical="true"
             android:layout_marginRight="10dp"
+            android:src="@drawable/icon_extension" />
+
+        <TextView
+            android:id="@+id/tv_sign"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="5dp"
+            android:layout_toLeftOf="@id/iv_sign_next"
             android:text="总有未知在深圳"
             android:textColor="@color/grey_700"
             android:textSize="@dimen/text_size_nor" />

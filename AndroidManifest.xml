@@ -17,7 +17,7 @@
         <activity
             android:name="com.thomas.path.activity.WelcomeActivity"
             android:label="@string/app_name"
-            android:launchMode="singleInstance" >
+            android:launchMode="standard" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -27,52 +27,52 @@
         <activity
             android:name="com.thomas.path.activity.LoginActivity"
             android:label="@string/app_name"
-            android:launchMode="singleInstance" >
+            android:launchMode="standard" >
         </activity>
         <activity
             android:name="com.thomas.path.activity.RegisterActivity"
             android:label="@string/app_name"
-            android:launchMode="singleInstance" >
+            android:launchMode="standard" >
         </activity>
         <activity
             android:name="com.thomas.path.activity.HomeActivity"
             android:label="@string/app_name"
-            android:launchMode="singleInstance" >
+            android:launchMode="standard" >
         </activity>
         <activity
             android:name="com.thomas.path.activity.HomeActivity_noslider"
             android:label="@string/app_name"
-            android:launchMode="singleInstance" >
+            android:launchMode="standard" >
         </activity>
         <activity
             android:name="com.thomas.path.activity.MainActivity"
             android:label="@string/app_name"
-            android:launchMode="singleInstance" >
+            android:launchMode="standard" >
         </activity>
         <activity
             android:name="com.thomas.path.activity.PersonActivity"
             android:label="@string/app_name"
-            android:launchMode="singleInstance" >
+            android:launchMode="standard" >
         </activity>
         <activity
             android:name="com.thomas.path.activity.PostDetailActivity"
             android:label="@string/app_name"
-            android:launchMode="singleInstance" >
+            android:launchMode="standard" >
         </activity>
         <activity
             android:name="com.thomas.path.activity.AddPostActivity"
             android:label="@string/app_name"
-            android:launchMode="singleInstance" >
+            android:launchMode="standard" >
         </activity>
         <activity
             android:name="com.thomas.path.activity.RecommendPersonActivity"
             android:label="@string/app_name"
-            android:launchMode="singleInstance" >
+            android:launchMode="standard" >
         </activity>
         <activity
             android:name="com.thomas.path.activity.EditUserInfoActivity"
             android:label="@string/app_name"
-            android:launchMode="singleInstance" >
+            android:launchMode="standard" >
         </activity>
     </application>
 

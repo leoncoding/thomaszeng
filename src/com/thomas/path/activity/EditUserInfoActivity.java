@@ -1,5 +1,6 @@
 package com.thomas.path.activity;
 
+import android.app.Dialog;
 import android.os.Bundle;
 import android.view.View;
 import android.view.View.OnClickListener;
@@ -11,6 +12,7 @@ import com.thoams.path.BaseActivity;
 import com.thoams.path.BaseApplication;
 import com.thomas.path.R;
 import com.thomas.path.bean.User;
+import com.thomas.path.manager.DialogManager;
 import com.thomas.path.manager.FontType;
 import com.thomas.path.manager.ImageManager;
 import com.thomas.path.manager.StringUtils;
@@ -23,6 +25,7 @@ public class EditUserInfoActivity extends BaseActivity implements
 			txt_city, tv_city, txt_sign, tv_sign;
 	private User user;
 	private CircleImageView head_iv;
+	private Dialog chooseSexDialog, choosePhotoDialog;
 
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
@@ -45,6 +48,7 @@ public class EditUserInfoActivity extends BaseActivity implements
 		TitleManager.showTitle(this, new int[] { TitleManager.BACK, }, "个人资料",
 				this);
 		head_iv = (CircleImageView) this.findViewById(R.id.iv_user_head);
+		head_iv.setOnClickListener(this);
 		txt_userhead = (TextView) this.findViewById(R.id.txt_userhead);
 		StringUtils.setTextTypeface(FontType.XIYUAN, this, txt_userhead);
 		txt_nickname = (TextView) this.findViewById(R.id.txt_nickname);
@@ -55,6 +59,7 @@ public class EditUserInfoActivity extends BaseActivity implements
 		StringUtils.setTextTypeface(FontType.XIYUAN, this, txt_sex);
 		tv_sex = (TextView) this.findViewById(R.id.tv_sex);
 		StringUtils.setTextTypeface(FontType.XIYUAN, this, tv_sex);
+		tv_sex.setOnClickListener(this);
 		txt_city = (TextView) this.findViewById(R.id.txt_city);
 		StringUtils.setTextTypeface(FontType.XIYUAN, this, txt_city);
 		tv_city = (TextView) this.findViewById(R.id.tv_city);
@@ -80,6 +85,14 @@ public class EditUserInfoActivity extends BaseActivity implements
 		}
 		tv_city.setText(user.getCity());
 		tv_sign.setText(user.getSign());
+		View view = View.inflate(this, R.layout.layout_actionsheet_up_head,
+				null);
+		choosePhotoDialog = (Dialog) DialogManager.getActionSheet(this, view,
+				this);
+		View sexview = View.inflate(this,
+				R.layout.layout_actionsheet_choose_sex, null);
+		chooseSexDialog = (Dialog) DialogManager.getActionSheet(this, sexview,
+				this);
 	}
 
 	@Override
@@ -95,7 +108,12 @@ public class EditUserInfoActivity extends BaseActivity implements
 		case R.id.title_back_iv:
 			finish();
 			break;
-
+		case R.id.iv_user_head:
+			choosePhotoDialog.show();
+			break;
+		case R.id.tv_sex:
+			chooseSexDialog.show();
+			break; 
 		default:
 			break;
 		}

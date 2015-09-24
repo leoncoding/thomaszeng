@@ -1,4 +1,4 @@
-<resources>
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
 
     <!--
         Base application theme, dependent on API level. This theme is replaced
@@ -137,5 +137,27 @@
         <item name="android:windowContentOverlay">@null</item>
         <item name="android:windowFullscreen">false</item>
         <item name="android:windowIsFloating">true</item>
+    </style>
+    
+    <style name="action_sheet" parent="@style/float_base"></style>
+    
+    <style name="action_sheet_root">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        
+        <item name="android:orientation">vertical</item>
+    </style>
+    
+    <style name="action_sheet_bt"> 
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/title_height</item>
+        <item name="android:textColor">@color/grey_700</item>
+        <item name="android:textSize">@dimen/text_size_nor_</item>
+        <item name="android:background">@color/white</item>
+    </style>
+    
+    <style name="action_sheet_animation" parent="@android:style/Animation">
+        <item name="android:windowEnterAnimation">@anim/action_sheet_enter</item>
+        <item name="android:windowExitAnimation">@anim/action_sheet_exit</item>
     </style>
 </resources>

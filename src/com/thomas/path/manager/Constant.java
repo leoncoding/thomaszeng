@@ -15,4 +15,5 @@ public class Constant {
 	public static String APPKEY = "a7a5d3d80d54";// 463db7238681 27fe7909f8e8
 	// 填写从短信SDK应用后台注册得到的APPSECRET
 	public static String APPSECRET = "733501e375c9b8a64535571333487783";
+	public static final int SHOW_PHOTO = 1;
 }

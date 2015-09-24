@@ -98,4 +98,45 @@ public class DialogManager {
 
 		return dialog;
 	}
+	
+
+	 /**
+	 * action sheet dialog
+	 * 
+	 * @param context
+	 * @param view
+	 * @return
+	 */
+
+	public static Dialog getActionSheet(Context context, View view, OnClickListener l) {
+		final Dialog dialog = new Dialog(context, R.style.action_sheet);
+		dialog.setContentView(view);
+		dialog.setCanceledOnTouchOutside(true);
+		Button btnCancel = (Button) view.findViewById(R.id.action_sheet_cancle_bt);
+		StringUtils.setButtonTypeface(FontType.XIYUAN, context, btnCancel);
+		btnCancel.setOnClickListener(
+				new OnClickListener() {
+					@Override
+					public void onClick(View v) {
+						// TODO Auto-generated method stub
+						dialog.dismiss();
+					}
+				});
+		
+		Button btnCamera = (Button) view.findViewById(R.id.action_sheet_photo_camera_bt);
+		StringUtils.setButtonTypeface(FontType.XIYUAN, context, btnCamera);
+		btnCamera.setOnClickListener(l);
+		
+		Button btnAlbum = (Button) view.findViewById(R.id.action_sheet_photo_album_bt);
+		StringUtils.setButtonTypeface(FontType.XIYUAN, context, btnAlbum);
+		btnAlbum.setOnClickListener(l);
+		
+		Window window = dialog.getWindow();
+		WindowManager.LayoutParams lp = window.getAttributes();
+		int screenW = getScreenWidth(context);
+		lp.width = screenW;
+		window.setGravity(Gravity.BOTTOM);  
+		window.setWindowAnimations(R.style.action_sheet_animation);  
+		return dialog;
+	}
 }
