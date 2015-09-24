@@ -13,3 +13,6 @@
 编辑用户信息界面</br>
 ![image](https://github.com/paulzeng/thomaszeng/raw/master/screenshots/editUserinfo.jpg)
 </br>
+选择上传头像效果</br>
+![image](https://github.com/paulzeng/thomaszeng/raw/master/screenshots/action_sheet.jpg)
+</br>
